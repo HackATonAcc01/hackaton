@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="../static/css/search.css"/>
+
+    </head>
+    <body>
+
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<form action="" method="post" novalidate>
+    {{ form.hidden_tag() }}
+
+
+    <div style="display:flex;gap:20px;justify-content:true;margin-left:37%">
+    <h4> Тема: </h4>
+    <select id="theme" name="theme">
+        <option value="costumes"> Национальные костюмы Поволжья </option>
+        <option value="holidays"> Праздники Сибири </option>
+    </select>
+    </div>
+    <br>
+    <br>
+    <div style="display:flex;gap:20px;justify-content:true;margin-left:40%">
+    <h4> Возраст: </h4>
+    <select id="age" name="age">
+        <option value="primary"> начальная школа </option>
+        <option value="middle"> средние классы </option>
+        <option value="high"> старшеклассники </option>
+    </select>
+    </div>
+    <br>
+    <br>
+    <div style="display:flex;gap:20px;justify-content:true;margin-left:39%">
+    <h4> Длительность: </h4>
+    <select id="duration" name="duration">
+        <option value="15min"> 15 минут </option>
+        <option value="30min"> 30 минут </option>
+        <option value="whole"> целый урок </option>
+    </select>
+    </div>
+    <br>
+    <br>
+    <div style="display:flex;gap:20px;justify-content:true;margin-left:33%">
+    <h4> Доступные инструменты: </h4>
+    <select id="instruments" name="instruments">
+        <option value="phones"> телефоны учеников </option>
+        <option value="computer"> компьютер учителя </option>
+        <option value="whiteboard"> интерактивная доска </option>
+        <option value="quiz"> онлайн-викторины </option>
+    </select>
+    </div>
+    <br>
+    <p>{{ form.submit(type="submit", class="btn btn-primary", style="margin-left:45%") }}</p>
+</form>
+		{% if message %}
+			<div class="alert alert-danger" role="alert">
+        		{{ message }}
+    		</div>
+		{% endif %}
+		<br>
+		<br>
+	</body>
+</html>

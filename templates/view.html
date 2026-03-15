@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="../static/css/search.css"/>
+
+    </head>
+    <body>
+    <br>
+    <h1 style="margin-left: 10%"> {{ scenario[0] }} </h1>
+    <br>
+    <br>
+
+    <h5 style="margin-left: 15%;"   > Возраст: <div class="border border-1 rounded" style=" margin-left: 10%; width: 30%; text-align: center;"> <h6>{{ scenario[1] }} </h6></div> </h5>
+    <br>
+    <h5 style="margin-left: 15%"   > Цель: <div class="border border-1 rounded" style=" margin-left: 10%; width: 30%; text-align: center;"> <h6>{{ scenario[2] }}</h6> </div> </h5>
+    <br>
+    <h5 style="margin-left: 15%"   > Как начать: <div class="border border-1 rounded" style=" margin-left: 10%; width: 30%; text-align: center;"> <h6>{{ scenario[3] }}</h6> </div> </h5>
+    <br>
+    <h5 style="margin-left: 15%"   > Основная часть: <div class="border border-1 rounded" style=" margin-left: 10%; width: 30%; text-align: center;"> <h6>{{ scenario[4]|safe }}</h6> </div> </h5>
+    <br>
+    <h5 style="margin-left: 15%"   > Рефлексия: <div class="border border-1 rounded" style=" margin-left: 10%; width: 30%; text-align: center;"> <h6>{{ scenario[5] }}</h6> </div> </h5>
+    <br>
+    <h5 style="margin-left: 15%"   > Вывод: <div class="border border-1 rounded" style=" margin-left: 10%; width: 30%; text-align: center;"> <h6>{{ scenario[6] }}</h6> </div> </h5>
+    <a href="/" ><div class="border border-1 rounded" style=" margin-left: 35%; width: 30%; text-align: center;"> На главную </div>
+    </body>
